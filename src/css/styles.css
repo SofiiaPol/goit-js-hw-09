@@ -59,3 +59,65 @@ body {
   transform: scale(1.05);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* STYLES FOR FORM  */
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.feedback-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 8px;
+}
+
+.feedback-input {
+  width: 360px;
+  height: 40px;
+  border: 1px #808080 solid;
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+}
+
+.feedback-input:hover {
+  border: 1px #000000 solid;
+}
+
+.feedback-input:active {
+  border: 1px #000000 solid;
+}
+
+.feedback-message {
+  width: 360px;
+  height: 80px;
+  border: 1px #808080 solid;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 16px;
+}
+
+.feedback-button {
+  width: 95px;
+  height: 40px;
+  background-color: #4e75ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedback-button:hover,
+.feedback-button:focus {
+  background-color: #6c8cff;
+}
