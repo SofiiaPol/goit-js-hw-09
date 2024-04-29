@@ -1,7 +1,11 @@
-const formData = {
-  email: '',
-  message: '',
-};
+let formData = getEmptyFormData();
+
+function getEmptyFormData() {
+  return {
+    email: '',
+    message: '',
+  };
+}
 
 const form = document.querySelector('.feedback-form');
 
@@ -31,4 +35,5 @@ form.addEventListener('submit', event => {
   console.log(formData);
   localStorage.removeItem('feedback-form-state');
   form.reset();
+  formData = getEmptyFormData();
 });
